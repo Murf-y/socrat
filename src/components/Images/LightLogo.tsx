@@ -1,4 +1,7 @@
-function LightLogo() {
+type LightLogoProps = {
+  className?: string
+}
+function LightLogo({ className }: LightLogoProps) {
   return (
     <svg
       width="398"
