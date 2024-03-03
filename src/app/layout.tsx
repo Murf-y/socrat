@@ -1,4 +1,7 @@
 import '@/styles/globals.css'
+import { Source_Serif_4 } from 'next/font/google'
+
+const source_serif = Source_Serif_4({ weight: ['400', '600'], display: 'swap', subsets: ['latin'] })
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -9,7 +12,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main
+          className={`min-h-dvh w-full bg-background text-text flex flex-col items-center ${source_serif.className}`}
+        >
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

@@ -7,9 +7,11 @@ import Link from 'next/link'
 function NavBar() {
   return (
     <div className="bg-background z-10 flex justify-between items-center py-2 sm:py-4 border-b-2 border-gray w-full px-8 sm:px-16 md:px-20">
-      <DarkLogo className="w-20 h-5 sm:w-28 sm:h-7 md:w-32 md:h-8" />
+      <Link href="/">
+        <DarkLogo className="w-20 h-5 sm:w-28 sm:h-7 md:w-32 md:h-8" />
+      </Link>
       <div className="space-x-4 sm:space-x-8 md:space-x-12 items-center hidden sm:flex sm:text-base md:text-lg">
-        <Link href="#" className="font-semibold">
+        <Link href="/chapters" className="font-semibold">
           Chapters
         </Link>
         <Link href="/signin" className="font-semibold">
@@ -37,7 +39,10 @@ function NavBar() {
 
           <Popover.Panel className="absolute bg-background border-2 border-lightgray border-opacity-35 w-fit h-fit py-6 px-6 z-20 right-0">
             <div className="flex flex-col w-36 space-y-4">
-              <Link href="#" className="font-semibold hover:bg-lightgray hover:bg-opacity-35 p-2">
+              <Link
+                href="/chapters"
+                className="font-semibold hover:bg-lightgray hover:bg-opacity-35 p-2"
+              >
                 Chapters
               </Link>
               <Link

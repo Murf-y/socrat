@@ -1,12 +1,9 @@
 import { Metadata } from 'next'
-import { Source_Serif_4 } from 'next/font/google'
 import NavBar from '@/components/NavBar'
 import Image from 'next/image'
 import LightLogo from '@/components/Images/LightLogo'
 import Footer from '@/components/Footer'
 import ScrollDownMouse from '@/components/ScrollDownMouse'
-
-const source_serif = Source_Serif_4({ weight: ['400', '600'], display: 'swap', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Socrat',
@@ -15,9 +12,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <main
-      className={`min-h-dvh w-full bg-background text-text flex flex-col items-center ${source_serif.className}`}
-    >
+    <>
       <div className="absolute mt-0 left-0 top-0 z-0 h-full w-full overflow-hidden">
         <div
           className="pointer-events-none absolute inset-x-0 transform-gpu overflow-hidden blur-3xl -left-48 -top-60"
@@ -45,7 +40,7 @@ export default async function Page() {
           <div className="flex flex-row space-x-4 items-center justify-between">
             <input
               type="text"
-              className="border-2 border-gray p-2 bg-transparent w-24 placeholder:text-xs sm:placeholder-sm md:placeholder-base focus:outline-none text-xs sm:text-sm md:text-base text-center"
+              className="border-2 border-gray p-2 bg-transparent w-24 sm:w-28 md:w-32 lg:w-40 placeholder:text-xs sm:placeholder:text-base focus:outline-none text-xs sm:text-sm md:text-base text-center"
               placeholder="1234 5678"
             />
             <button className="btn btn-primary flex items-center justify-center">Join</button>
@@ -57,7 +52,7 @@ export default async function Page() {
         </div>
       </div>
       <div className="h-[75vh]"></div>
-      <div className="landing_grid h-fit text-background  w-11/12 md:w-3/4 xl:1/2 mb-12 text-xs sm:text-sm md:text-base ">
+      <div className="landing_grid h-fit text-background  w-11/12 md:w-3/4 xl:w-1/2 mb-12 text-xs sm:text-sm md:text-base ">
         <div className="div1 w-full px-4 py-6 flex justify-center items-center">
           Learn as a group
         </div>
@@ -111,6 +106,6 @@ export default async function Page() {
       </div>
 
       <Footer />
-    </main>
+    </>
   )
 }
