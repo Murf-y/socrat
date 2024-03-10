@@ -3,26 +3,28 @@
 import { Menu, Popover } from '@headlessui/react'
 import DarkLogo from './Images/DarkLogo'
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 
 function NavBar() {
   return (
     <div className="bg-background z-10 flex justify-between items-center py-2 sm:py-4 border-b-2 border-gray w-full px-8 sm:px-16 md:px-20">
       <Link href="/">
-        <DarkLogo className="w-20 h-5 sm:w-28 sm:h-7 md:w-32 md:h-8" />
+        <DarkLogo className="w-20 h-5 sm:w-24 sm:h-7 md:w-32 md:h-8" />
       </Link>
       <div className="space-x-4 sm:space-x-8 md:space-x-12 items-center hidden sm:flex sm:text-base md:text-lg">
         <Link href="/chapters" className="font-semibold">
           Chapters
         </Link>
-        <Link href="/signin" className="font-semibold">
-          Log In
+
+        <Link href="/circle" className="font-semibold btn btn-secondary text-nowrap">
+          Create Circle
         </Link>
-        <Link href="/signup" className="btn btn-secondary">
-          Sign Up
-        </Link>
+
+        <UserButton />
       </div>
 
-      <div className="flex sm:hidden">
+      <div className="flex sm:hidden flex-row items-center justify-center space-x-2">
+        <UserButton />
         <Popover className="relative">
           <Popover.Button>
             <svg
@@ -45,14 +47,8 @@ function NavBar() {
               >
                 Chapters
               </Link>
-              <Link
-                href="/signin"
-                className="font-semibold hover:bg-lightgray hover:bg-opacity-35 p-2"
-              >
-                Log In
-              </Link>
-              <Link href="/signup" className="btn btn-secondary">
-                Sign Up
+              <Link href="/circle" className="font-semibold btn btn-secondary">
+                Create Circle
               </Link>
             </div>
           </Popover.Panel>
