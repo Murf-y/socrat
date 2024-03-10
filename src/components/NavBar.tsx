@@ -4,8 +4,19 @@ import { Menu, Popover } from '@headlessui/react'
 import DarkLogo from './Images/DarkLogo'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
+import { useState } from 'react'
+
+const CODE_LENGTH = 8
+
+function generateRandomCode() {
+  return Math.random()
+    .toString(36)
+    .substring(2, 2 + CODE_LENGTH)
+}
 
 function NavBar() {
+  const [code, setCode] = useState(generateRandomCode())
+
   return (
     <div className="bg-background z-10 flex justify-between items-center py-2 sm:py-4 border-b-2 border-gray w-full px-8 sm:px-16 md:px-20">
       <Link href="/">
@@ -16,7 +27,10 @@ function NavBar() {
           Chapters
         </Link>
 
-        <Link href="/circle" className="font-semibold btn btn-secondary text-nowrap">
+        <Link
+          href={`/circle/${code.toLowerCase()}`}
+          className="font-semibold btn btn-secondary text-nowrap"
+        >
           Create Circle
         </Link>
 
@@ -47,7 +61,10 @@ function NavBar() {
               >
                 Chapters
               </Link>
-              <Link href="/circle" className="font-semibold btn btn-secondary">
+              <Link
+                href={`/circle/${code.toLowerCase()}`}
+                className="font-semibold btn btn-secondary"
+              >
                 Create Circle
               </Link>
             </div>
