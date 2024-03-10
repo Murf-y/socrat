@@ -2,32 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+body {
+  height: 100dvh;
+  scroll-behavior: smooth;
+}
+
+body {
+  --sb-track-color: #ebebeb;
+  --sb-thumb-color: #262626;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 shadow;
+}
+
+.btn-primary {
+  @apply bg-text text-white;
+}
+
+.btn-primary:hover {
+  @apply cursor-pointer bg-black;
+}
+
+.btn-secondary {
+  @apply bg-transparent text-text border border-text;
+}
+
+.btn-secondary:hover {
+  @apply bg-text text-white;
+}
+
+.btn-disabled {
+  @apply bg-neutral-500 text-neutral-300 cursor-not-allowed;
+}
+
+.landing_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+  grid-template-rows: 1.5fr 0.25fr 1.5fr 0.25fr 1.5fr 0.35fr 1.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #262626;
+}
+.div2 {
+  grid-area: 3 / 1 / 4 / 3;
+  background-color: #262626;
+}
+.div3 {
+  grid-area: 1 / 4 / 4 / 9;
+  background-color: #262626;
+}
+.div4 {
+  grid-area: 5 / 1 / 8 / 5;
+  background-color: #262626;
+}
+.div5 {
+  grid-area: 5 / 6 / 6 / 7;
+  background-color: #262626;
+}
+.div6 {
+  grid-area: 7 / 6 / 8 / 7;
+  background-color: #262626;
+}
+.div7 {
+  grid-area: 5 / 8 / 8 / 9;
+}
+
+/* hide div7 on less than sm, and make div5 and div6 take extra column */
+@media (max-width: 640px) {
+  .landing_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-rows: 1.5fr 0.35fr 1.5fr 0.35fr 1.5fr 0.35fr 1.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .div2 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .div3 {
+    grid-area: 1 / 4 / 4 / 9;
+  }
+  .div4 {
+    grid-area: 5 / 1 / 8 / 5;
+  }
+  .div5 {
+    grid-area: 7 / 6 / 8 / 9;
+  }
+  .div6 {
+    grid-area: 5 / 6 / 6 / 9;
+  }
+
+  .div7 {
+    display: none;
   }
 }
