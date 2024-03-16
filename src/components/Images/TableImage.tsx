@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Table() {
+function TableImage() {
   return (
     <svg
       width="637"
@@ -38,7 +38,7 @@ function Table() {
         d="M289.058 21.6797V21.6795C289.058 17.3195 292.592 13.7811 296.957 13.7811H346.131C350.491 13.7811 354.03 17.3196 354.03 21.6795V27.7187C354.03 31.6658 352.462 35.4513 349.671 38.2424C346.88 41.0335 343.094 42.6015 339.147 42.6015H303.937C299.989 42.6015 296.204 41.0335 293.413 38.2424C290.622 35.4513 289.054 31.6658 289.054 27.7187L289.058 21.6797Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M298.121 94.0004H307.759L305.007 123.181C304.945 123.984 304.575 124.732 303.975 125.268C303.374 125.804 302.59 126.087 301.785 126.058C300.98 126.03 300.218 125.691 299.657 125.113C299.097 124.535 298.781 123.763 298.777 122.958L298.121 94.0004Z"
@@ -92,7 +92,7 @@ function Table() {
         d="M291.44 68.2633L291.44 68.2633C292.06 67.3685 292.887 66.6373 293.851 66.1321C294.815 65.627 295.887 65.3631 296.976 65.363H345.559C347.714 65.363 349.743 66.3956 351.009 68.1464L351.009 68.1467L361.346 82.3948L361.542 82.2527L361.346 82.3948C366.143 89.0044 361.423 98.2576 353.26 98.2576H289.74C281.677 98.2576 276.93 89.1996 281.527 82.5721L281.527 82.572L291.44 68.2633Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M279.51 87.4677C279.081 93.0691 283.412 98.5076 289.739 98.5076H353.26C359.602 98.5076 363.923 93.0552 363.49 87.463C363.113 92.4778 359.02 96.9804 353.26 96.9804H289.739C283.994 96.9804 279.887 92.4918 279.51 87.4677Z"
@@ -105,9 +105,9 @@ function Table() {
       <path
         d="M279.51 87.4677C279.887 92.4918 283.994 96.9804 289.74 96.9804H353.26C359.02 96.9804 363.113 92.4778 363.49 87.463"
         stroke="url(#paint14_linear_225_314)"
-        stroke-width="0.1"
+        strokeWidth="0.1"
       />
-      <g clip-path="url(#clip0_225_314)">
+      <g clipPath="url(#clip0_225_314)">
         <path
           d="M512.429 107.442L518.697 113.881L494.195 137.734L487.927 131.295L512.429 107.442Z"
           fill="url(#paint15_linear_225_314)"
@@ -136,7 +136,7 @@ function Table() {
           d="M516.566 90.2589L516.567 90.2587C519.691 87.2174 524.691 87.2813 527.736 90.4085L562.038 125.643C565.079 128.767 565.012 133.771 561.888 136.812L557.561 141.025C554.733 143.778 550.927 145.296 546.98 145.243C543.033 145.19 539.269 143.571 536.516 140.743L511.954 115.514C509.201 112.685 507.683 108.879 507.736 104.932C507.789 100.986 509.408 97.2215 512.236 94.4681L516.566 90.2589Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M471.069 147.201L477.792 154.107L454.964 172.49C454.346 173.006 453.552 173.262 452.749 173.206C451.945 173.15 451.195 172.785 450.655 172.189C450.114 171.592 449.825 170.809 449.848 170.005C449.871 169.2 450.204 168.435 450.778 167.87L471.069 147.201Z"
@@ -190,7 +190,7 @@ function Table() {
           d="M484.849 124.46L484.85 124.46C485.923 124.28 487.024 124.363 488.058 124.701C489.093 125.04 490.03 125.624 490.789 126.403L524.679 161.215C526.182 162.759 526.858 164.933 526.486 167.061L526.486 167.062L523.488 184.407L523.726 184.448L523.488 184.407C522.098 192.455 512.176 195.528 506.481 189.679L462.172 144.165C456.547 138.387 459.726 128.668 467.682 127.338L467.682 127.338L484.849 124.46Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M462.767 129.308C458.455 132.909 457.578 139.805 461.993 144.339L506.302 189.853C510.726 194.397 517.647 193.69 521.352 189.479C517.495 192.707 511.414 192.915 507.396 188.788L463.087 143.274C459.079 139.157 459.43 133.083 462.767 129.308Z"
@@ -203,7 +203,7 @@ function Table() {
         <path
           d="M462.767 129.308C459.43 133.083 459.079 139.157 463.087 143.274L507.397 188.788C511.414 192.915 517.496 192.707 521.352 189.479"
           stroke="url(#paint29_linear_225_314)"
-          stroke-width="0.1"
+          strokeWidth="0.1"
         />
       </g>
       <path
@@ -234,7 +234,7 @@ function Table() {
         d="M615.32 274.058H615.32C619.68 274.058 623.219 277.592 623.219 281.957V331.132C623.219 335.491 619.68 339.03 615.32 339.03H609.281C605.334 339.03 601.548 337.462 598.757 334.671C595.966 331.88 594.398 328.094 594.398 324.147V288.937C594.398 284.989 595.966 281.204 598.757 278.413C601.548 275.622 605.334 274.054 609.281 274.054L615.32 274.058Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M543 283.121V292.759L513.819 290.008C513.016 289.946 512.268 289.576 511.732 288.975C511.196 288.375 510.913 287.59 510.941 286.785C510.97 285.981 511.309 285.218 511.887 284.658C512.465 284.097 513.237 283.782 514.042 283.778L543 283.121Z"
@@ -288,7 +288,7 @@ function Table() {
         d="M568.736 276.44L568.736 276.44C569.631 277.06 570.362 277.887 570.868 278.851C571.373 279.815 571.637 280.887 571.637 281.976V330.559C571.637 332.714 570.604 334.743 568.853 336.009L568.853 336.009L554.605 346.346L554.747 346.542L554.605 346.346C547.995 351.143 538.742 346.423 538.742 338.26V274.74C538.742 266.676 547.8 261.93 554.428 266.527L554.428 266.527L568.736 276.44Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M549.532 264.51C543.93 264.082 538.492 268.412 538.492 274.74V338.26C538.492 344.602 543.944 348.923 549.537 348.49C544.522 348.113 540.019 344.02 540.019 338.26V274.74C540.019 268.994 544.508 264.887 549.532 264.51Z"
@@ -301,7 +301,7 @@ function Table() {
       <path
         d="M549.532 264.51C544.508 264.887 540.019 268.994 540.019 274.74V338.26C540.019 344.02 544.522 348.113 549.537 348.49"
         stroke="url(#paint44_linear_225_314)"
-        stroke-width="0.1"
+        strokeWidth="0.1"
       />
       <path
         d="M342.304 585.252L333.318 585.352L332.94 551.158L341.926 551.059L342.304 585.252Z"
@@ -331,7 +331,7 @@ function Table() {
         d="M351.894 600.098L351.894 600.098C351.943 604.458 348.448 608.035 344.084 608.084L294.912 608.628C290.553 608.676 286.975 605.177 286.927 600.817L286.86 594.778C286.816 590.831 288.343 587.029 291.103 584.207C293.863 581.385 297.631 579.775 301.577 579.732L336.786 579.342C340.733 579.299 344.535 580.825 347.357 583.585C350.179 586.345 351.789 590.113 351.832 594.06L351.894 600.098Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M342.033 527.882L332.395 527.989L334.824 498.779C334.877 497.976 335.239 497.224 335.833 496.681C336.428 496.139 337.209 495.847 338.014 495.867C338.819 495.886 339.585 496.217 340.152 496.789C340.719 497.36 341.043 498.129 341.056 498.934L342.033 527.882Z"
@@ -385,7 +385,7 @@ function Table() {
         d="M348.998 553.544L348.998 553.544C348.388 554.445 347.569 555.186 346.611 555.701C345.652 556.217 344.583 556.493 343.495 556.505L294.915 557.042C292.76 557.066 290.719 556.056 289.434 554.32L289.434 554.319L278.94 540.186L278.746 540.331L278.94 540.186C274.07 533.63 278.687 524.325 286.85 524.235L350.366 523.532C358.429 523.443 363.276 532.448 358.752 539.126L358.752 539.126L348.998 553.544Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M360.715 534.209C361.081 528.603 356.691 523.213 350.364 523.282L286.847 523.985C280.506 524.055 276.245 529.555 276.74 535.142C277.062 530.123 281.104 525.576 286.864 525.512L350.381 524.81C356.126 524.746 360.282 529.189 360.715 534.209Z"
@@ -398,9 +398,9 @@ function Table() {
       <path
         d="M360.715 534.209C360.283 529.189 356.126 524.746 350.381 524.81L286.864 525.512C281.105 525.576 277.062 530.123 276.74 535.142"
         stroke="url(#paint59_linear_225_314)"
-        stroke-width="0.1"
+        strokeWidth="0.1"
       />
-      <g clip-path="url(#clip1_225_314)">
+      <g clipPath="url(#clip1_225_314)">
         <path
           d="M127.59 516.812L121.25 510.442L145.487 486.319L151.826 492.689L127.59 516.812Z"
           fill="url(#paint60_linear_225_314)"
@@ -429,7 +429,7 @@ function Table() {
           d="M123.642 534.039L123.642 534.039C120.552 537.115 115.551 537.107 112.472 534.013L77.7821 499.16C74.7064 496.07 74.7182 491.065 77.8083 487.99L82.0886 483.73C84.8863 480.945 88.6754 479.386 92.6226 479.395C96.5698 479.404 100.352 480.981 103.136 483.779L127.975 508.735C130.76 511.533 132.319 515.322 132.309 519.269C132.3 523.216 130.723 526.998 127.926 529.782L123.642 534.039Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M168.508 476.598L161.708 469.767L184.332 451.132C184.945 450.609 185.736 450.344 186.539 450.391C187.343 450.439 188.097 450.795 188.645 451.386C189.192 451.976 189.489 452.756 189.475 453.561C189.461 454.366 189.136 455.134 188.569 455.705L168.508 476.598Z"
@@ -483,7 +483,7 @@ function Table() {
           d="M154.98 499.489L154.98 499.489C153.908 499.681 152.806 499.611 151.768 499.284C150.73 498.957 149.787 498.383 149.019 497.612L114.746 463.178C113.226 461.65 112.526 459.484 112.874 457.351L112.874 457.351L115.681 439.973L115.442 439.935L115.681 439.973C116.981 431.911 126.869 428.728 132.628 434.514L177.438 479.535C183.126 485.25 180.055 495.004 172.114 496.421L172.114 496.421L154.98 499.489Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M177.007 494.397C181.279 490.749 182.079 483.844 177.615 479.359L132.805 434.337C128.331 429.843 121.418 430.626 117.76 434.878C121.58 431.608 127.659 431.333 131.722 435.415L176.532 480.436C180.586 484.508 180.301 490.586 177.007 494.397Z"
@@ -496,10 +496,10 @@ function Table() {
         <path
           d="M177.007 494.397C180.302 490.586 180.586 484.508 176.532 480.436L131.722 435.415C127.659 431.333 121.581 431.608 117.76 434.878"
           stroke="url(#paint74_linear_225_314)"
-          stroke-width="0.1"
+          strokeWidth="0.1"
         />
       </g>
-      <g clip-path="url(#clip2_225_314)">
+      <g clipPath="url(#clip2_225_314)">
         <path
           d="M537.888 489.314L531.922 496.035L506.347 473.336L512.313 466.615L537.888 489.314Z"
           fill="url(#paint75_linear_225_314)"
@@ -528,7 +528,7 @@ function Table() {
           d="M555.326 492.189L555.327 492.19C558.587 495.084 558.888 500.076 555.991 503.34L523.348 540.118C520.454 543.379 515.459 543.676 512.198 540.782L507.681 536.773C504.729 534.153 502.939 530.468 502.704 526.527C502.469 522.587 503.81 518.715 506.43 515.763L529.803 489.429C532.423 486.477 536.108 484.686 540.049 484.452C543.989 484.217 547.861 485.557 550.813 488.177L555.326 492.189Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M495.222 450.961L488.824 458.169L468.826 436.741C468.267 436.162 467.953 435.389 467.951 434.583C467.948 433.778 468.257 433.003 468.813 432.421C469.369 431.838 470.128 431.493 470.932 431.457C471.737 431.422 472.524 431.698 473.129 432.23L495.222 450.961Z"
@@ -582,7 +582,7 @@ function Table() {
           d="M518.906 463.048L518.906 463.048C519.164 464.106 519.161 465.21 518.899 466.266C518.637 467.322 518.123 468.299 517.4 469.113L485.151 505.449C483.72 507.061 481.601 507.893 479.451 507.678L479.451 507.678L461.933 505.951L461.909 506.192L461.933 505.951C453.805 505.151 450.018 495.479 455.436 489.374L497.601 441.866C502.954 435.836 512.879 438.298 514.785 446.136L514.785 446.136L518.906 463.048Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M512.462 441.378C508.557 437.339 501.615 436.968 497.414 441.7L455.249 489.208C451.039 493.951 452.249 500.802 456.719 504.19C453.218 500.579 452.568 494.529 456.391 490.221L498.556 442.714C502.37 438.417 508.454 438.325 512.462 441.378Z"
@@ -595,10 +595,10 @@ function Table() {
         <path
           d="M512.462 441.378C508.454 438.325 502.371 438.417 498.557 442.714L456.391 490.221C452.568 494.529 453.219 500.579 456.719 504.19"
           stroke="url(#paint89_linear_225_314)"
-          stroke-width="0.1"
+          strokeWidth="0.1"
         />
       </g>
-      <g clip-path="url(#clip3_225_314)">
+      <g clipPath="url(#clip3_225_314)">
         <path
           d="M101.571 135.319L107.462 128.533L133.286 150.948L127.396 157.734L101.571 135.319Z"
           fill="url(#paint90_linear_225_314)"
@@ -627,7 +627,7 @@ function Table() {
           d="M84.1015 132.637L84.1014 132.637C80.8088 129.779 80.453 124.791 83.3139 121.495L115.547 84.3583C118.405 81.0657 123.397 80.7129 126.69 83.5707L131.251 87.5293C134.231 90.1167 136.062 93.7822 136.341 97.7196C136.619 101.657 135.322 105.544 132.734 108.524L109.654 135.116C107.067 138.096 103.401 139.927 99.464 140.206C95.5267 140.484 91.64 139.187 88.6591 136.599L84.1015 132.637Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M144.659 173.199L150.977 165.92L171.21 187.126C171.776 187.699 172.098 188.469 172.109 189.274C172.121 190.079 171.82 190.857 171.271 191.446C170.722 192.034 169.966 192.388 169.162 192.432C168.358 192.477 167.568 192.209 166.958 191.685L144.659 173.199Z"
@@ -681,7 +681,7 @@ function Table() {
           d="M120.843 161.374L120.843 161.374C120.573 160.32 120.563 159.216 120.814 158.156C121.064 157.097 121.568 156.115 122.281 155.293L154.127 118.602C155.54 116.975 157.65 116.119 159.802 116.311L159.802 116.311L177.338 117.844L177.359 117.603L177.338 117.844C185.474 118.554 189.368 128.184 184.018 134.348L142.38 182.319C137.095 188.409 127.143 186.056 125.151 178.24L125.151 178.24L120.843 161.374Z"
           fill="#CECECE"
           stroke="#262626"
-          stroke-width="0.5"
+          strokeWidth="0.5"
         />
         <path
           d="M127.526 182.972C131.476 186.967 138.421 187.262 142.569 182.483L184.206 134.512C188.363 129.723 187.078 122.886 182.571 119.547C186.111 123.119 186.828 129.161 183.053 133.511L141.416 181.482C137.649 185.821 131.567 185.98 127.526 182.972Z"
@@ -694,7 +694,7 @@ function Table() {
         <path
           d="M127.526 182.972C131.567 185.98 137.649 185.821 141.416 181.482L183.053 133.511C186.828 129.161 186.111 123.119 182.571 119.547"
           stroke="url(#paint104_linear_225_314)"
-          stroke-width="0.1"
+          strokeWidth="0.1"
         />
       </g>
       <path
@@ -725,7 +725,7 @@ function Table() {
         d="M22.8611 351.343L22.8609 351.343C18.5013 351.391 14.9239 347.897 14.8756 343.532L14.3318 294.361C14.2836 290.001 17.7828 286.424 22.1424 286.375L28.1812 286.309C32.1281 286.265 35.9307 287.791 38.7525 290.551C41.5743 293.311 43.184 297.079 43.2277 301.026L43.6171 336.234C43.6607 340.181 42.1347 343.984 39.3747 346.806C36.6146 349.627 32.8467 351.237 28.8998 351.281L22.8611 351.343Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M95.0771 341.481L94.9706 331.843L124.18 334.272C124.983 334.326 125.735 334.687 126.278 335.282C126.821 335.876 127.113 336.658 127.093 337.463C127.073 338.268 126.742 339.034 126.171 339.6C125.599 340.167 124.83 340.491 124.025 340.505L95.0771 341.481Z"
@@ -779,7 +779,7 @@ function Table() {
         d="M69.4158 348.447L69.4157 348.447C68.5142 347.837 67.7738 347.018 67.2581 346.059C66.7423 345.101 66.4666 344.032 66.4544 342.943L65.9171 294.363C65.8933 292.208 66.9034 290.168 68.64 288.882L68.6403 288.882L82.7733 278.388L82.629 278.194L82.7733 278.388C89.3294 273.519 98.6343 278.136 98.7246 286.298L99.4271 349.815C99.5162 357.878 90.5112 362.724 83.8333 358.201L83.8332 358.201L69.4158 348.447Z"
         fill="#CECECE"
         stroke="#262626"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         d="M88.7509 360.163C94.3568 360.53 99.7471 356.14 99.6771 349.812L98.9746 286.296C98.9044 279.954 93.4045 275.694 87.8175 276.189C92.8361 276.51 97.3837 280.553 97.4474 286.312L98.1499 349.829C98.2135 355.575 93.7705 359.731 88.7509 360.163Z"
@@ -792,9 +792,9 @@ function Table() {
       <path
         d="M88.7507 360.163C93.7704 359.731 98.2133 355.575 98.1497 349.829L97.4472 286.312C97.3835 280.553 92.836 276.51 87.8173 276.189"
         stroke="url(#paint119_linear_225_314)"
-        stroke-width="0.1"
+        strokeWidth="0.1"
       />
-      <circle cx="321" cy="307" r="225" fill="#262626" stroke="#E6B44E" stroke-width="9" />
+      <circle cx="321" cy="307" r="225" fill="#262626" stroke="#E6B44E" strokeWidth="9" />
       <defs>
         <filter
           id="filter0_i_225_314"
@@ -803,9 +803,9 @@ function Table() {
           width="21.9946"
           height="43.7005"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -829,9 +829,9 @@ function Table() {
           width="21.7446"
           height="43.7005"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -855,9 +855,9 @@ function Table() {
           width="13.0926"
           height="38.4795"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -868,9 +868,9 @@ function Table() {
           width="15.1473"
           height="37.8773"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -881,9 +881,9 @@ function Table() {
           width="45.0269"
           height="28.5825"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -907,9 +907,9 @@ function Table() {
           width="29.4165"
           height="44.3606"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -933,9 +933,9 @@ function Table() {
           width="23.3807"
           height="35.2462"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -946,9 +946,9 @@ function Table() {
           width="36.7313"
           height="20.6702"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -959,9 +959,9 @@ function Table() {
           width="43.9507"
           height="21.7447"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -985,9 +985,9 @@ function Table() {
           width="43.7007"
           height="21.7447"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1011,9 +1011,9 @@ function Table() {
           width="38.4793"
           height="13.0928"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1024,9 +1024,9 @@ function Table() {
           width="37.8772"
           height="15.1473"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1037,9 +1037,9 @@ function Table() {
           width="21.5557"
           height="43.8931"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1063,9 +1063,9 @@ function Table() {
           width="22.1816"
           height="43.6495"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1089,9 +1089,9 @@ function Table() {
           width="13.4915"
           height="38.4003"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1102,9 +1102,9 @@ function Table() {
           width="14.7537"
           height="38.0167"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1115,9 +1115,9 @@ function Table() {
           width="44.8584"
           height="28.9285"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1141,9 +1141,9 @@ function Table() {
           width="29.0742"
           height="44.5358"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1167,9 +1167,9 @@ function Table() {
           width="23.0457"
           height="35.4476"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1180,9 +1180,9 @@ function Table() {
           width="36.5564"
           height="21.0202"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1193,9 +1193,9 @@ function Table() {
           width="31.0566"
           height="43.5775"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1219,9 +1219,9 @@ function Table() {
           width="45.4238"
           height="27.1087"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1245,9 +1245,9 @@ function Table() {
           width="36.4988"
           height="21.1258"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1258,9 +1258,9 @@ function Table() {
           width="22.9339"
           height="35.5025"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1271,9 +1271,9 @@ function Table() {
           width="31.3813"
           height="43.3771"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1297,9 +1297,9 @@ function Table() {
           width="45.5664"
           height="26.7477"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1323,9 +1323,9 @@ function Table() {
           width="36.6731"
           height="20.7748"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1336,9 +1336,9 @@ function Table() {
           width="23.2684"
           height="35.3005"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1349,9 +1349,9 @@ function Table() {
           width="44.1431"
           height="21.3058"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1375,9 +1375,9 @@ function Table() {
           width="43.6494"
           height="22.1814"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feColorMatrix
             in="SourceAlpha"
@@ -1401,9 +1401,9 @@ function Table() {
           width="38.4002"
           height="13.4916"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1414,9 +1414,9 @@ function Table() {
           width="38.0169"
           height="14.7537"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="0.3" result="effect1_foregroundBlur_225_314" />
         </filter>
@@ -1428,8 +1428,8 @@ function Table() {
           y2="53.7285"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_225_314"
@@ -1439,8 +1439,8 @@ function Table() {
           y2="59.586"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_225_314"
@@ -1450,8 +1450,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(304.226 40.3841) rotate(95.412) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint3_linear_225_314"
@@ -1461,8 +1461,8 @@ function Table() {
           y2="53.7285"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_225_314"
@@ -1472,8 +1472,8 @@ function Table() {
           y2="59.586"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint5_radial_225_314"
@@ -1483,8 +1483,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(339.002 39.8668) rotate(78.3658) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_225_314"
@@ -1494,8 +1494,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(302.12 123.391) rotate(-86.367) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint7_linear_225_314"
@@ -1505,8 +1505,8 @@ function Table() {
           y2="104.691"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint8_radial_225_314"
@@ -1516,8 +1516,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(293.325 95.6723) rotate(110.368) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_225_314"
@@ -1527,8 +1527,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(340.791 123.391) rotate(-93.633) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint10_linear_225_314"
@@ -1538,8 +1538,8 @@ function Table() {
           y2="104.691"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint11_radial_225_314"
@@ -1549,8 +1549,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(347.7 96.7848) rotate(67.1412) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint12_linear_225_314"
@@ -1560,8 +1560,8 @@ function Table() {
           y2="96.9664"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_225_314"
@@ -1571,8 +1571,8 @@ function Table() {
           y2="92.9853"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_225_314"
@@ -1582,10 +1582,10 @@ function Table() {
           y2="96.0398"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_225_314"
@@ -1595,8 +1595,8 @@ function Table() {
           y2="124.58"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_225_314"
@@ -1606,8 +1606,8 @@ function Table() {
           y2="125.226"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint17_radial_225_314"
@@ -1617,8 +1617,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(513.745 114.175) rotate(141.18) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint18_linear_225_314"
@@ -1628,8 +1628,8 @@ function Table() {
           y2="151.064"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_225_314"
@@ -1639,8 +1639,8 @@ function Table() {
           y2="151.707"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint20_radial_225_314"
@@ -1650,8 +1650,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(538.374 138.732) rotate(124.134) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint21_radial_225_314"
@@ -1661,8 +1661,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(452.8 170.568) rotate(-40.5988) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint22_linear_225_314"
@@ -1672,8 +1672,8 @@ function Table() {
           y2="157.42"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint23_radial_225_314"
@@ -1683,8 +1683,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(466.526 144.931) rotate(156.136) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint24_radial_225_314"
@@ -1694,8 +1694,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(479.775 198.276) rotate(-47.8647) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint25_linear_225_314"
@@ -1705,8 +1705,8 @@ function Table() {
           y2="185.335"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint26_radial_225_314"
@@ -1716,8 +1716,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(503.659 184.668) rotate(112.909) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint27_linear_225_314"
@@ -1727,8 +1727,8 @@ function Table() {
           y2="145.306"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_225_314"
@@ -1738,8 +1738,8 @@ function Table() {
           y2="142.165"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_225_314"
@@ -1749,10 +1749,10 @@ function Table() {
           y2="201.847"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_225_314"
@@ -1762,8 +1762,8 @@ function Table() {
           y2="290.757"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_225_314"
@@ -1773,8 +1773,8 @@ function Table() {
           y2="285.957"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint32_radial_225_314"
@@ -1784,8 +1784,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(596.616 289.226) rotate(-174.588) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint33_linear_225_314"
@@ -1795,8 +1795,8 @@ function Table() {
           y2="327.719"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint34_linear_225_314"
@@ -1806,8 +1806,8 @@ function Table() {
           y2="322.913"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint35_radial_225_314"
@@ -1817,8 +1817,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(597.133 324.003) rotate(168.366) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint36_radial_225_314"
@@ -1828,8 +1828,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(513.609 287.121) rotate(3.63295) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint37_linear_225_314"
@@ -1839,8 +1839,8 @@ function Table() {
           y2="286.976"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint38_radial_225_314"
@@ -1850,8 +1850,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(541.327 278.325) rotate(-159.632) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint39_radial_225_314"
@@ -1861,8 +1861,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(513.609 325.791) rotate(-3.63295) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint40_linear_225_314"
@@ -1872,8 +1872,8 @@ function Table() {
           y2="325.935"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint41_radial_225_314"
@@ -1883,8 +1883,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(540.215 332.701) rotate(157.141) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint42_linear_225_314"
@@ -1894,8 +1894,8 @@ function Table() {
           y2="277.589"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint43_linear_225_314"
@@ -1905,8 +1905,8 @@ function Table() {
           y2="277.082"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint44_linear_225_314"
@@ -1916,10 +1916,10 @@ function Table() {
           y2="357.402"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint45_linear_225_314"
@@ -1929,8 +1929,8 @@ function Table() {
           y2="568.236"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint46_linear_225_314"
@@ -1940,8 +1940,8 @@ function Table() {
           y2="562.326"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint47_radial_225_314"
@@ -1951,8 +1951,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(336.521 581.563) rotate(-85.2217) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint48_linear_225_314"
@@ -1962,8 +1962,8 @@ function Table() {
           y2="568.645"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint49_linear_225_314"
@@ -1973,8 +1973,8 @@ function Table() {
           y2="562.734"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint50_radial_225_314"
@@ -1984,8 +1984,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(301.752 582.465) rotate(-102.268) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint51_radial_225_314"
@@ -1995,8 +1995,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(337.708 498.538) rotate(92.9993) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint52_linear_225_314"
@@ -2006,8 +2006,8 @@ function Table() {
           y2="517.235"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint53_radial_225_314"
@@ -2017,8 +2017,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(346.81 526.157) rotate(-70.2657) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint54_radial_225_314"
@@ -2028,8 +2028,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(299.04 498.966) rotate(85.7334) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint55_linear_225_314"
@@ -2039,8 +2039,8 @@ function Table() {
           y2="517.666"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint56_radial_225_314"
@@ -2050,8 +2050,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(292.425 525.646) rotate(-113.493) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint57_linear_225_314"
@@ -2061,8 +2061,8 @@ function Table() {
           y2="524.855"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint58_linear_225_314"
@@ -2072,8 +2072,8 @@ function Table() {
           y2="528.83"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint59_linear_225_314"
@@ -2083,10 +2083,10 @@ function Table() {
           y2="526.664"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint60_linear_225_314"
@@ -2096,8 +2096,8 @@ function Table() {
           y2="499.595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint61_linear_225_314"
@@ -2107,8 +2107,8 @@ function Table() {
           y2="498.865"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint62_radial_225_314"
@@ -2118,8 +2118,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(126.199 510.094) rotate(-39.4534) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint63_linear_225_314"
@@ -2129,8 +2129,8 @@ function Table() {
           y2="473.398"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint64_linear_225_314"
@@ -2140,8 +2140,8 @@ function Table() {
           y2="472.672"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint65_radial_225_314"
@@ -2151,8 +2151,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(101.3 485.81) rotate(-56.4996) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint66_radial_225_314"
@@ -2162,8 +2162,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(186.517 453.03) rotate(138.768) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint67_linear_225_314"
@@ -2173,8 +2173,8 @@ function Table() {
           y2="466.324"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint68_radial_225_314"
@@ -2184,8 +2184,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(173.076 478.817) rotate(-24.4974) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint69_radial_225_314"
@@ -2195,8 +2195,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(159.237 425.622) rotate(131.502) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint70_linear_225_314"
@@ -2206,8 +2206,8 @@ function Table() {
           y2="438.711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint71_radial_225_314"
@@ -2217,8 +2217,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(135.505 439.493) rotate(-67.7243) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint72_linear_225_314"
@@ -2228,8 +2228,8 @@ function Table() {
           y2="478.426"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint73_linear_225_314"
@@ -2239,8 +2239,8 @@ function Table() {
           y2="481.594"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint74_linear_225_314"
@@ -2250,10 +2250,10 @@ function Table() {
           y2="422.511"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint75_linear_225_314"
@@ -2263,8 +2263,8 @@ function Table() {
           y2="483.404"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint76_linear_225_314"
@@ -2274,8 +2274,8 @@ function Table() {
           y2="475.926"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint77_radial_225_314"
@@ -2285,8 +2285,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(531.269 491.118) rotate(-132.997) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint78_linear_225_314"
@@ -2296,8 +2296,8 @@ function Table() {
           y2="511.048"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint79_linear_225_314"
@@ -2307,8 +2307,8 @@ function Table() {
           y2="503.566"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint80_radial_225_314"
@@ -2318,8 +2318,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(508.571 517.47) rotate(-150.043) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint81_radial_225_314"
@@ -2329,8 +2329,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(470.586 434.443) rotate(45.2236) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint82_linear_225_314"
@@ -2340,8 +2340,8 @@ function Table() {
           y2="446.747"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint83_radial_225_314"
@@ -2351,8 +2351,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(497.155 446.264) rotate(-118.041) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint84_radial_225_314"
@@ -2362,8 +2362,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(444.916 463.364) rotate(37.9577) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint85_linear_225_314"
@@ -2373,8 +2373,8 @@ function Table() {
           y2="475.885"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint86_radial_225_314"
@@ -2384,8 +2384,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(460.228 486.193) rotate(-161.268) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint87_linear_225_314"
@@ -2395,8 +2395,8 @@ function Table() {
           y2="444.855"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint88_linear_225_314"
@@ -2406,8 +2406,8 @@ function Table() {
           y2="447.118"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint89_linear_225_314"
@@ -2417,10 +2417,10 @@ function Table() {
           y2="505.162"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint90_linear_225_314"
@@ -2430,8 +2430,8 @@ function Table() {
           y2="141.034"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint91_linear_225_314"
@@ -2441,8 +2441,8 @@ function Table() {
           y2="148.499"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint92_radial_225_314"
@@ -2452,8 +2452,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(108.17 133.443) rotate(46.369) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint93_linear_225_314"
@@ -2463,8 +2463,8 @@ function Table() {
           y2="113.121"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint94_linear_225_314"
@@ -2474,8 +2474,8 @@ function Table() {
           y2="120.59"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint95_radial_225_314"
@@ -2485,8 +2485,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(130.575 106.841) rotate(29.3229) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint96_radial_225_314"
@@ -2496,8 +2496,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(169.476 189.444) rotate(-135.41) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint97_linear_225_314"
@@ -2507,8 +2507,8 @@ function Table() {
           y2="177.295"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint98_radial_225_314"
@@ -2518,8 +2518,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(142.778 177.917) rotate(61.325) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint99_radial_225_314"
@@ -2529,8 +2529,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(194.824 160.24) rotate(-142.676) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint100_linear_225_314"
@@ -2540,8 +2540,8 @@ function Table() {
           y2="147.873"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint101_radial_225_314"
@@ -2551,8 +2551,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(179.261 137.582) rotate(18.0982) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint102_linear_225_314"
@@ -2562,8 +2562,8 @@ function Table() {
           y2="179.321"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint103_linear_225_314"
@@ -2573,8 +2573,8 @@ function Table() {
           y2="177.095"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint104_linear_225_314"
@@ -2584,10 +2584,10 @@ function Table() {
           y2="118.439"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint105_linear_225_314"
@@ -2597,8 +2597,8 @@ function Table() {
           y2="334.291"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint106_linear_225_314"
@@ -2608,8 +2608,8 @@ function Table() {
           y2="339.026"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint107_radial_225_314"
@@ -2619,8 +2619,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(41.3967 335.969) rotate(4.77833) scale(6.94256 17.1369)"
         >
-          <stop offset="0.253" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.253" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint108_linear_225_314"
@@ -2630,8 +2630,8 @@ function Table() {
           y2="297.332"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="0.813" stop-color="#1E1E1E" />
+          <stop stopColor="#262626" />
+          <stop offset="0.813" stopColor="#1E1E1E" />
         </linearGradient>
         <linearGradient
           id="paint109_linear_225_314"
@@ -2641,8 +2641,8 @@ function Table() {
           y2="302.072"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#6F4239" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#6F4239" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint110_radial_225_314"
@@ -2652,8 +2652,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(40.4948 301.201) rotate(-12.2678) scale(7.57656 18.7017)"
         >
-          <stop offset="0.333" stop-color="#262626" />
-          <stop offset="1" stop-color="#7A4145" stop-opacity="0" />
+          <stop offset="0.333" stopColor="#262626" />
+          <stop offset="1" stopColor="#7A4145" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint111_radial_225_314"
@@ -2663,8 +2663,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(124.421 337.157) rotate(-177.001) scale(27.5563 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#262626" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#262626" />
         </radialGradient>
         <linearGradient
           id="paint112_linear_225_314"
@@ -2674,8 +2674,8 @@ function Table() {
           y2="337.508"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint113_radial_225_314"
@@ -2685,8 +2685,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(96.8021 346.258) rotate(19.7343) scale(13.5331 21.8462)"
         >
-          <stop offset="0.389" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.389" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint114_radial_225_314"
@@ -2696,8 +2696,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(123.994 298.489) rotate(175.733) scale(27.5564 16.2013)"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#3E1531" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#3E1531" />
         </radialGradient>
         <linearGradient
           id="paint115_linear_225_314"
@@ -2707,8 +2707,8 @@ function Table() {
           y2="298.551"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#554344" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#554344" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint116_radial_225_314"
@@ -2718,8 +2718,8 @@ function Table() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(97.3134 291.874) rotate(-23.4925) scale(10.1671 16.4125)"
         >
-          <stop offset="0.283" stop-color="#262626" />
-          <stop offset="1" stop-color="#804044" stop-opacity="0" />
+          <stop offset="0.283" stopColor="#262626" />
+          <stop offset="1" stopColor="#804044" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint117_linear_225_314"
@@ -2729,8 +2729,8 @@ function Table() {
           y2="346.98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.487" stop-color="#262626" />
-          <stop offset="1" stop-color="#9D6C67" stop-opacity="0" />
+          <stop offset="0.487" stopColor="#262626" />
+          <stop offset="1" stopColor="#9D6C67" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint118_linear_225_314"
@@ -2740,8 +2740,8 @@ function Table() {
           y2="347.531"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#262626" />
-          <stop offset="1" stop-color="#825257" stop-opacity="0" />
+          <stop stopColor="#262626" />
+          <stop offset="1" stopColor="#825257" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint119_linear_225_314"
@@ -2751,10 +2751,10 @@ function Table() {
           y2="267.182"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.136" stop-color="#262626" stop-opacity="0" />
-          <stop offset="0.421" stop-color="#FF1B00" />
-          <stop offset="0.805" stop-color="#AF736C" />
-          <stop offset="0.901" stop-color="#AF736C" stop-opacity="0" />
+          <stop offset="0.136" stopColor="#262626" stopOpacity="0" />
+          <stop offset="0.421" stopColor="#FF1B00" />
+          <stop offset="0.805" stopColor="#AF736C" />
+          <stop offset="0.901" stopColor="#AF736C" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_225_314">
           <rect
@@ -2793,4 +2793,4 @@ function Table() {
   )
 }
 
-export default Table
+export default TableImage

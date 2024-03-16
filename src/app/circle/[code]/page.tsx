@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function Page({ params }: { params: { code: string } }) {
   return (
-    <div className="w-full h-screen flex flex-col">
-      <NavBar />
+    <div className="w-full h-screen flex flex-col space-y-2">
+      <NavBar showCreateCircle={false} />
       <Circle params={params} />
     </div>
   )

@@ -16,7 +16,7 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <main
-            className={`min-h-dvh w-full bg-background text-text flex flex-col items-center ${source_serif.className}`}
+            className={`relative min-h-dvh w-full bg-background text-text flex flex-col items-center ${source_serif.className}`}
           >
             {children}
           </main>

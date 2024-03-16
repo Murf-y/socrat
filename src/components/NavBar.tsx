@@ -1,10 +1,11 @@
 'use client'
 
-import { Menu, Popover } from '@headlessui/react'
+import { Popover } from '@headlessui/react'
 import DarkLogo from './Images/DarkLogo'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
-import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { MovingButton } from './MovingBorder'
 
 const CODE_LENGTH = 8
 
@@ -14,8 +15,16 @@ function generateRandomCode() {
     .substring(2, 2 + CODE_LENGTH)
 }
 
-function NavBar() {
-  const [code, setCode] = useState(generateRandomCode())
+interface NavBarProps {
+  showCreateCircle?: boolean
+}
+
+function NavBar({ showCreateCircle = true }: NavBarProps) {
+  const router = useRouter()
+  const navigateToCircle = () => {
+    const code = generateRandomCode()
+    router.push(`/circle/${code.toLowerCase()}`)
+  }
 
   return (
     <div className="bg-background z-10 flex justify-between items-center py-2 sm:py-4 border-b-2 border-gray w-full px-8 sm:px-16 md:px-20">
@@ -27,18 +36,20 @@ function NavBar() {
           Chapters
         </Link>
 
-        <Link
-          href={`/circle/${code.toLowerCase()}`}
-          className="font-semibold btn btn-secondary text-nowrap"
-        >
-          Create Circle
-        </Link>
+        {showCreateCircle && (
+          <MovingButton
+            onClick={navigateToCircle}
+            borderRadius="0rem"
+            className="bg-background text-text font-semibold border-lightgray hover:bg-text hover:text-white text-nowrap"
+          >
+            Create Circle
+          </MovingButton>
+        )}
 
         <UserButton />
       </div>
 
       <div className="flex sm:hidden flex-row items-center justify-center space-x-2">
-        <UserButton />
         <Popover className="relative">
           <Popover.Button>
             <svg
@@ -61,12 +72,19 @@ function NavBar() {
               >
                 Chapters
               </Link>
-              <Link
-                href={`/circle/${code.toLowerCase()}`}
-                className="font-semibold btn btn-secondary"
-              >
-                Create Circle
-              </Link>
+              {showCreateCircle && (
+                <MovingButton
+                  onClick={navigateToCircle}
+                  borderRadius="0rem"
+                  className="bg-background text-text font-semibold border-lightgray hover:bg-text hover:text-white text-nowrap"
+                >
+                  Create Circle
+                </MovingButton>
+              )}
+              <div className="flex flex-row w-full justify-between">
+                <UserButton />
+                <p className="text-xs font-semibold text-text">Profile</p>
+              </div>
             </div>
           </Popover.Panel>
         </Popover>

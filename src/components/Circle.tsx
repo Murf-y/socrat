@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Clock from './Clock'
 import MembersIcon from './Images/MembersIcon'
 import ShareCircleModal from './ShareCircleModal'
-import Table from './Images/Table'
+import TableImage from './Images/TableImage'
 import MicOpenIcon from './Images/MicOpenIcon'
 import MicClosedIcon from './Images/MicClosedIcon'
 import EndCallIcon from './Images/EndCallIcon'
@@ -19,8 +19,8 @@ function Circle({ params }: { params: { code: string } }) {
   const [isMicOn, setIsMicOn] = useState(false)
 
   return (
-    <div className="flex w-full flex-col flex-1 relative">
-      <div className="relative w-full flex flex-row items-center justify-between h-fit pt-4 px-4 sm:px-8 md:px-12 text-sm sm:text-lg md:text-xl font-bold text-text">
+    <div className="flex w-full h-full flex-col flex-1 relative px-8 sm:px-16 md:px-20">
+      <div className="relative w-full flex flex-row items-center justify-between h-fit text-sm sm:text-lg md:text-xl text-text">
         <div className="flex flex-row space-x-1 sm:space-x-4 items-center justify-center">
           <Clock />
           <div className="w-[3px] h-4 sm:h-6 bg-text"></div>
@@ -32,12 +32,12 @@ function Circle({ params }: { params: { code: string } }) {
         </div>
       </div>
 
-      <p className="font-semibold text-text text-center mt-8 px-4 sm:px-8 md:px-12 text-xs sm:text-lg md:text-xl ">
+      <p className="font-semibold text-text text-center pt-4 sm:pt-8 text-xs sm:text-lg md:text-xl">
         {topic}
       </p>
 
       <div className="w-full flex items-center justify-center">
-        <Table />
+        <TableImage />
       </div>
 
       <div className="w-full flex flex-row space-x-4 items-center justify-center">
@@ -68,6 +68,7 @@ function Circle({ params }: { params: { code: string } }) {
           )}
         </button>
       </div>
+
       {/* <Call appId={process.env.PUBLIC_AGORA_APP_ID!} channelName={params.code}></Call> */}
     </div>
   )
