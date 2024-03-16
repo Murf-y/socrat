@@ -6,24 +6,19 @@ import clsx from 'clsx'
 
 function ShareCircleModal() {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const [didCopy, setDidCopy] = useState(false)
 
   return (
     <>
-      <div
-        className={clsx(
-          'absolute right-8 top-3 transition-all delay-300',
-          isOpen ? 'hidden' : 'block'
-        )}
-      >
+      <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 cursor-pointer"
+          className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
           <path
@@ -35,12 +30,12 @@ function ShareCircleModal() {
       </div>
       <div
         className={clsx(
-          'transition-all delay-300 shadow-md shadow-text border-2 border-text absolute left-12 bottom-12 px-8 py-4 text-white',
+          'absolute bg-background right-2 top-2 transition-all delay-300 shadow-md shadow-text border-2 border-text px-8 py-4 text-white',
           isOpen ? 'block' : 'hidden'
         )}
       >
         <div className="flex flex-col w-full h-full">
-          <div className="w-full flex flex-row justify-between">
+          <div className="w-full flex flex-row justify-between items-center">
             <div className="text-text">Your Circle is Ready</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,13 +43,13 @@ function ShareCircleModal() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 cursor-pointer text-text"
+              className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer text-text"
               onClick={() => setIsOpen(false)}
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </div>
-          <p className="text-sm text-gray">
+          <p className="text-xs sm:text-sm text-gray">
             Share this circle link with others that you want to join
           </p>
           <div className="w-full border-2 border-lightgray p-2 flex flex-row justify-between">
@@ -66,7 +61,7 @@ function ShareCircleModal() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 cursor-pointer text-text"
+                className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer text-text"
               >
                 <path
                   strokeLinecap="round"
