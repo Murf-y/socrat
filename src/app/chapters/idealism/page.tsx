@@ -25,7 +25,7 @@ function Page() {
         />
       </div>
       <NavBar />
-      <div className="overflow-hidden w-full h-full flex flex-col space-y-12">
+      <div className="overflow-hidden w-full h-full flex flex-col space-y-12 z-10">
         <div className="mt-6 sm:mt-12 px-8 sm:px-16 md:px-20 flex flex-col w-full space-y-8 sm:space-y-12">
           <h1 className="font-bold text-lg sm:text-xl md:text-3xl text-text">Idealism</h1>
           <p className="text-text text-xs sm:text-sm md:text-base">

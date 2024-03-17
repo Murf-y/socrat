@@ -32,8 +32,9 @@ function NavBar({ showCreateCircle = true }: NavBarProps) {
         <DarkLogo className="w-20 h-5 sm:w-24 sm:h-7 md:w-32 md:h-8" />
       </Link>
       <div className="space-x-4 sm:space-x-8 md:space-x-12 items-center hidden sm:flex sm:text-base md:text-lg">
-        <Link href="/chapters" className="font-semibold">
+        <Link href="/chapters" className="font-semibold transition duration-300 group">
           Chapters
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-text"></span>
         </Link>
 
         {showCreateCircle && (

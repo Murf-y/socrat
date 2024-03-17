@@ -9,15 +9,16 @@ import MicOpenIcon from './Images/MicOpenIcon'
 import MicClosedIcon from './Images/MicClosedIcon'
 import EndCallIcon from './Images/EndCallIcon'
 import LeaveIcon from './Images/LeaveIcon'
+import { useRouter } from 'next/navigation'
 
 function Circle({ params }: { params: { code: string } }) {
   const [topic, setTopic] = useState(
     'Do you think the nature of reality is inherently objective or subjective, and how does our perception of it influence our understanding?'
   )
-
   const [isManager, setIsManager] = useState(false)
   const [isMicOn, setIsMicOn] = useState(false)
 
+  const router = useRouter()
   return (
     <div className="flex w-full h-full flex-col flex-1 relative px-8 sm:px-16 md:px-20">
       <div className="relative w-full flex flex-row items-center justify-between h-fit text-sm sm:text-lg md:text-xl text-text">
@@ -41,7 +42,12 @@ function Circle({ params }: { params: { code: string } }) {
       </div>
 
       <div className="w-full flex flex-row space-x-4 items-center justify-center">
-        <button className="btn btn-secondary text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center">
+        <button
+          className="btn btn-secondary hover:bg-text hover:text-white text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center"
+          onClick={() => {
+            setIsMicOn(!isMicOn)
+          }}
+        >
           {isMicOn ? (
             <>
               <MicOpenIcon />
@@ -54,7 +60,12 @@ function Circle({ params }: { params: { code: string } }) {
             </>
           )}
         </button>
-        <button className="btn btn-secondary text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center">
+        <button
+          className="btn btn-secondary text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center"
+          onClick={() => {
+            router.push('/')
+          }}
+        >
           {isManager ? (
             <>
               <EndCallIcon />

@@ -41,10 +41,10 @@ export function MovingButton({
       {...otherProps}
     >
       <div className="absolute inset-0" style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}>
-        <MovingBorder duration={duration} rx="30%" ry="30%">
+        <MovingBorder duration={duration} rx="100%" ry="100%">
           <div
             className={cn(
-              'h-20 w-20 opacity-[0.8] bg-[radial-gradient(black_40%,transparent_60%)]',
+              'h-20 w-36 opacity-[0.8] bg-[radial-gradient(black_40%,transparent_60%)]',
               borderClassName
             )}
           />
@@ -68,7 +68,7 @@ export function MovingButton({
 
 export const MovingBorder = ({
   children,
-  duration = 2000,
+  duration = 2500,
   rx,
   ry,
   ...otherProps
