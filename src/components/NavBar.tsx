@@ -5,7 +5,11 @@ import DarkLogo from './Images/DarkLogo'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
-import { MovingButton } from './MovingBorder'
+import dynamic from 'next/dynamic'
+
+const MovingButton = dynamic(() => import('./MovingButton').then((mod) => mod.MovingButton), {
+  ssr: false,
+})
 
 const CODE_LENGTH = 8
 
@@ -74,17 +78,13 @@ function NavBar({ showCreateCircle = true }: NavBarProps) {
                 Chapters
               </Link>
               {showCreateCircle && (
-                <MovingButton
-                  onClick={navigateToCircle}
-                  borderRadius="0rem"
-                  className="bg-background text-text font-semibold border-lightgray hover:bg-text hover:text-white text-nowrap"
-                >
+                <button onClick={navigateToCircle} className="btn btn-secondary">
                   Create Circle
-                </MovingButton>
+                </button>
               )}
-              <div className="flex flex-row w-full justify-between">
+              <div className="flex flex-row w-full space-x-2 items-center hover:bg-lightgray hover:bg-opacity-35 p-2">
                 <UserButton />
-                <p className="text-xs font-semibold text-text">Profile</p>
+                <p className="text-md font-semibold text-text">Profile</p>
               </div>
             </div>
           </Popover.Panel>

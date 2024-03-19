@@ -83,16 +83,15 @@ export const MovingBorder = ({
   const progress = useMotionValue<number>(0)
 
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength()
+    const length = pathRef.current?.getTotalLength() ?? 0
     if (length) {
       const pxPerMillisecond = length / duration
       progress.set((time * pxPerMillisecond) % length)
     }
   })
 
-  const x = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).x)
-  const y = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).y)
-
+  const x = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).x ?? 0)
+  const y = useTransform(progress, (val) => pathRef.current?.getPointAtLength(val).y ?? 0)
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`
 
   return (
