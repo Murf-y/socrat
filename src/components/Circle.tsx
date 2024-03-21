@@ -53,16 +53,7 @@ function Circle({ code }: CircleProps) {
   )
   const [isManager, setIsManager] = useState(false)
   const [isMicOn, setIsMicOn] = useState(false)
-  const [usersImages, setUsersImages] = useState<string[]>([
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-    currentUser.user?.imageUrl ?? '',
-  ])
+  const [usersImages, setUsersImages] = useState<string[]>([currentUser.user?.imageUrl ?? ''])
 
   return (
     <div className="flex w-full h-full flex-col flex-1 relative px-8 sm:px-16 md:px-20 bg-background">
