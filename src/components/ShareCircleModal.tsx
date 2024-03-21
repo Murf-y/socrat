@@ -1,12 +1,11 @@
 'use client'
 import React, { useState } from 'react'
-import { useQRCode } from 'next-qrcode'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
 function ShareCircleModal() {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const [didCopy, setDidCopy] = useState(false)
 
   return (

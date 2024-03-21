@@ -1,6 +1,91 @@
 import React from 'react'
+import Image from 'next/image'
 
-function TableImage() {
+interface TableImageProps {
+  usersImages: (string | undefined)[]
+}
+
+interface UserImageSvgProps {
+  index: number
+  imageUrl: string | undefined
+  circleX: number
+  circleY: number
+  radius: number
+  width: number
+}
+
+function UserImageSvg({ index, imageUrl, circleX, circleY, radius, width }: UserImageSvgProps) {
+  return (
+    <>
+      <defs>
+        <clipPath id={'clip-path-' + index}>
+          <circle cx={circleX} cy={circleY} r={radius} fill="white" />
+        </clipPath>
+      </defs>
+      <g clipPath={'url(#clip-path-' + index + ')'}>
+        <rect width="100%" height="100%" fill="#CECECE" />
+        {imageUrl && (
+          <foreignObject
+            x={circleX - width / 2}
+            y={circleY - width / 2}
+            width={width}
+            height={width}
+            className="relative"
+          >
+            <Image
+              src={imageUrl}
+              alt={'User ' + index}
+              fill
+              className="rounded-full relative object-cover w-full h-full object-center border-2 border-text"
+              sizes="100% 100%"
+            />
+          </foreignObject>
+        )}
+      </g>
+    </>
+  )
+}
+
+function TableImage({ usersImages }: TableImageProps) {
+  if (usersImages.length > 8) {
+    usersImages = usersImages.slice(0, 8)
+  }
+
+  const imagesPositions = [
+    {
+      x: 321,
+      y: 45,
+    },
+    {
+      x: 520,
+      y: 132,
+    },
+    {
+      x: 585,
+      y: 307,
+    },
+    {
+      x: 508,
+      y: 495,
+    },
+    {
+      x: 317,
+      y: 570,
+    },
+    {
+      x: 127,
+      y: 485,
+    },
+    {
+      x: 57,
+      y: 317,
+    },
+    {
+      x: 127,
+      y: 125,
+    },
+  ]
+
   return (
     <svg
       width="637"
@@ -93,6 +178,7 @@ function TableImage() {
         fill="#CECECE"
         stroke="#262626"
         strokeWidth="0.5"
+        className="relative"
       />
       <path
         d="M279.51 87.4677C279.081 93.0691 283.412 98.5076 289.739 98.5076H353.26C359.602 98.5076 363.923 93.0552 363.49 87.463C363.113 92.4778 359.02 96.9804 353.26 96.9804H289.739C283.994 96.9804 279.887 92.4918 279.51 87.4677Z"
@@ -794,6 +880,19 @@ function TableImage() {
         stroke="url(#paint119_linear_225_314)"
         strokeWidth="0.1"
       />
+      {usersImages.map((imageUrl, index) => {
+        return (
+          <UserImageSvg
+            key={index}
+            index={index}
+            radius={35}
+            width={70}
+            circleX={imagesPositions[index].x}
+            circleY={imagesPositions[index].y}
+            imageUrl={imageUrl}
+          />
+        )
+      })}
       <circle cx="321" cy="307" r="225" fill="#262626" stroke="#E6B44E" strokeWidth="9" />
       <defs>
         <filter

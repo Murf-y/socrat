@@ -17,21 +17,10 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <>
-      {/* <div className="w-full absolute inset-0 h-screen">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={10}
-          className="w-full h-full"
-          particleColor="#262626"
-        />
-      </div> */}
       <NavBar />
       <div className="flex flex-col justify-evenly w-full h-full space-y-44 overflow-hidden">
-        <div className="font-bold text-center w-full text-lg sm:text-xl md:text-3xl mt-24 relative flex flex-col items-center justify-center overflow-hidden">
-          <h1 className="font-bold text-center text-text relative z-20">Philosophy of Mind</h1>
+        <div className="font-bold text-center w-full text-xl sm:text-xl md:text-3xl pt-12 sm:pt-24 relative flex flex-col items-center justify-center overflow-hidden">
+          <h1 className="font-bold text-center text-text relative">Philosophy of Mind</h1>
           <div className="w-[40rem] h-40 relative">
             {/* Gradients */}
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-text to-transparent h-[2px] w-3/4 blur-sm" />
@@ -58,7 +47,7 @@ function Page() {
             width={227}
             height={229}
             priority
-            className="mx-auto absolute left-0 md:left-4 -top-20 md:top-8 w-16 sm:w-32 md:w-40"
+            className="mx-auto absolute left-1 md:left-4 top-28 sm:top-2 md:top-8 w-16 sm:w-24 md:w-40 z-20"
           />
           <Image
             src="/socrat_with_thumb.png"
@@ -66,7 +55,7 @@ function Page() {
             width={135}
             height={370}
             priority
-            className="mx-auto absolute right-0 sm:right-4 -top-8 w-9 sm:w-20 md:w-24"
+            className="mx-auto absolute right-0 sm:right-4 top-32 sm:top-32 md:top-12 w-9 sm:w-16 md:w-24 z-20"
           />
         </div>
         <Timeline />
