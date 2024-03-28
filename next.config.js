@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
 const nextConfig = {
   reactStrictMode: false,
   images: {
@@ -17,4 +18,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+module.exports = nextConfig
