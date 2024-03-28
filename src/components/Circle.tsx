@@ -1,20 +1,11 @@
 'use client'
-
-import React, { useCallback, useEffect, useState } from 'react'
-import Clock from './Clock'
-import MembersIcon from './Images/MembersIcon'
-import ShareCircleModal from './ShareCircleModal'
-import TableImage from './Images/TableImage'
-import MicOpenIcon from './Images/MicOpenIcon'
-import MicClosedIcon from './Images/MicClosedIcon'
-import EndCallIcon from './Images/EndCallIcon'
-import LeaveIcon from './Images/LeaveIcon'
-import { useRouter } from 'next/navigation'
+import { generateTokenAction } from '@/app/circle/[code]/action'
+import CircleUI from './CircleUI'
+import { Call, StreamCall, StreamVideo, StreamVideoClient } from '@stream-io/video-react-sdk'
+import { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
 
-interface CircleProps {
-  code: string
-}
+const apiKey = process.env.NEXT_PUBLIC_GET_STREAM_API_KEY ?? ''
 
 function LoadingUI() {
   return (
@@ -44,80 +35,59 @@ function LoadingUI() {
     </div>
   )
 }
-function Circle({ code }: CircleProps) {
-  const router = useRouter()
-  const currentUser = useUser()
 
-  const [topic, setTopic] = useState(
-    'Do you think the nature of reality is inherently objective or subjective, and how does our perception of it influence our understanding?'
-  )
-  const [isManager, setIsManager] = useState(false)
-  const [isMicOn, setIsMicOn] = useState(false)
-  const [usersImages, setUsersImages] = useState<string[]>([currentUser.user?.imageUrl ?? ''])
+function Circle({ circleCode }: { circleCode: string }) {
+  const user = useUser()
+  const [client, setClient] = useState<StreamVideoClient | null>(null)
+  const [call, setCall] = useState<Call | null>(null)
+
+  useEffect(() => {
+    if (!user.user || !apiKey) return
+    const userId = user.user.id
+
+    const currentClient = new StreamVideoClient({
+      apiKey,
+      user: {
+        id: userId,
+        image: user.user.imageUrl,
+        name: user.user.fullName ?? 'Anonymous',
+      },
+      tokenProvider: () => generateTokenAction(userId),
+    })
+
+    const currentCall = currentClient.call('circle', circleCode)
+    currentCall
+      .join({
+        create: true,
+        members_limit: 8,
+      })
+      .catch((err) => {
+        console.error(`Failed to join the call`, err)
+      })
+
+    setCall(currentCall)
+    setClient(currentClient)
+
+    return () => {
+      currentClient.disconnectUser()
+      currentCall.leave().catch((err) => {
+        console.error(`Failed to leave the call`, err)
+      })
+      setClient(null)
+      setCall(null)
+    }
+  }, [circleCode, user.user])
+
+  if (client == null || call == null) return <LoadingUI />
 
   return (
-    <div className="flex w-full h-full flex-col flex-1 relative px-8 sm:px-16 md:px-20 bg-background">
-      {/* Clock | Code | Members | Link */}
-      <div className="relative w-full flex flex-row items-center justify-between h-fit text-sm sm:text-lg md:text-xl text-text">
-        <div className="flex flex-row space-x-1 sm:space-x-4 items-center justify-center">
-          <Clock />
-          <div className="w-[3px] h-4 sm:h-6 bg-text"></div>
-          <p>{code}</p>
+    <StreamVideo client={client}>
+      <StreamCall call={call}>
+        <div className="flex w-full h-full flex-col flex-1 relative pt-2 px-8 sm:px-16 md:px-20 bg-background">
+          <CircleUI circleCode={circleCode} />
         </div>
-        <div className="flex flex-row items-center justify-center space-x-2">
-          <MembersIcon />
-          <ShareCircleModal />
-        </div>
-      </div>
-
-      <p className="font-semibold text-text text-center pt-4 sm:pt-8 text-xs sm:text-lg md:text-xl">
-        {topic}
-      </p>
-
-      <div className="w-full flex items-center justify-center">
-        <TableImage usersImages={usersImages} />
-      </div>
-
-      {/* Management Buttons */}
-      <div className="w-full flex flex-row space-x-4 items-center justify-center">
-        <button
-          className="btn btn-secondary hover:bg-text hover:text-white text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center"
-          onClick={() => {
-            setIsMicOn(!isMicOn)
-          }}
-        >
-          {isMicOn ? (
-            <>
-              <MicOpenIcon />
-              <p>Mute</p>
-            </>
-          ) : (
-            <>
-              <MicClosedIcon />
-              <p>Unmute</p>
-            </>
-          )}
-        </button>
-        <button
-          className="btn btn-secondary text-xs sm:text-base text-nowrap rounded-full flex flex-row space-x-2 items-center justify-center"
-          onClick={() => {
-            router.push('/')
-          }}
-        >
-          {isManager ? (
-            <>
-              <EndCallIcon />
-              <p>End</p>
-            </>
-          ) : (
-            <>
-              <LeaveIcon />
-              <p>Leave</p>
-            </>
-          )}
-        </button>
-      </div>
-    </div>
+      </StreamCall>
+    </StreamVideo>
   )
 }
 

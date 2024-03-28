@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import Image from 'next/image'
+import { StreamVideoParticipant } from '@stream-io/video-react-sdk'
+import clsx from 'clsx'
 
 interface TableImageProps {
-  usersImages: (string | undefined)[]
+  participants: StreamVideoParticipant[]
 }
 
 interface UserImageSvgProps {
   index: number
-  imageUrl: string | undefined
+  participant: StreamVideoParticipant
   circleX: number
   circleY: number
   radius: number
   width: number
 }
 
-function UserImageSvg({ index, imageUrl, circleX, circleY, radius, width }: UserImageSvgProps) {
+function UserImageSvg({ index, participant, circleX, circleY, radius, width }: UserImageSvgProps) {
   return (
     <>
       <defs>
@@ -24,7 +26,7 @@ function UserImageSvg({ index, imageUrl, circleX, circleY, radius, width }: User
       </defs>
       <g clipPath={'url(#clip-path-' + index + ')'}>
         <rect width="100%" height="100%" fill="#CECECE" />
-        {imageUrl && (
+        {participant.image && (
           <foreignObject
             x={circleX - width / 2}
             y={circleY - width / 2}
@@ -32,11 +34,20 @@ function UserImageSvg({ index, imageUrl, circleX, circleY, radius, width }: User
             height={width}
             className="relative"
           >
+            <div
+              className={clsx(
+                'relative object-cover z-10 bg-teal-600 w-full h-full transition-all duration-300 ease-in-out',
+                participant.isSpeaking ? 'bg-opacity-30' : 'bg-opacity-0'
+              )}
+            ></div>
             <Image
-              src={imageUrl}
+              src={participant.image}
               alt={'User ' + index}
               fill
-              className="rounded-full relative object-cover w-full h-full object-center border-2 border-text"
+              className={clsx(
+                'rounded-full relative object-cover w-full h-full object-center border-2 transition-all duration-300 ease-in-out',
+                participant.isSpeaking ? 'border-teal-600 border-4' : 'border-text'
+              )}
               sizes="100% 100%"
             />
           </foreignObject>
@@ -46,10 +57,14 @@ function UserImageSvg({ index, imageUrl, circleX, circleY, radius, width }: User
   )
 }
 
-function TableImage({ usersImages }: TableImageProps) {
-  if (usersImages.length > 8) {
-    usersImages = usersImages.slice(0, 8)
+function TableImage({ participants }: TableImageProps) {
+  if (participants.length > 8) {
+    participants = participants.slice(0, 8)
   }
+
+  const isAnyoneSpeaking = useMemo(() => {
+    return participants.some((p) => p.isSpeaking)
+  }, [participants])
 
   const imagesPositions = [
     {
@@ -880,7 +895,7 @@ function TableImage({ usersImages }: TableImageProps) {
         stroke="url(#paint119_linear_225_314)"
         strokeWidth="0.1"
       />
-      {usersImages.map((imageUrl, index) => {
+      {participants.map((participant, index) => {
         return (
           <UserImageSvg
             key={index}
@@ -889,11 +904,19 @@ function TableImage({ usersImages }: TableImageProps) {
             width={70}
             circleX={imagesPositions[index].x}
             circleY={imagesPositions[index].y}
-            imageUrl={imageUrl}
+            participant={participant}
           />
         )
       })}
-      <circle cx="321" cy="307" r="225" fill="#262626" stroke="#E6B44E" strokeWidth="9" />
+      <circle
+        cx="321"
+        cy="307"
+        r="225"
+        fill="#262626"
+        className="transition-all duration-300 ease-in-out"
+        stroke={isAnyoneSpeaking ? '#0D9488' : '#E6B44E'}
+        strokeWidth="9"
+      />
       <defs>
         <filter
           id="filter0_i_225_314"

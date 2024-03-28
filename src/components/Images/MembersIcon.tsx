@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MembersIcon() {
+function MembersIcon({ onClick }: { onClick: () => void }) {
   return (
     <svg
       width="32"
@@ -9,6 +9,7 @@ function MembersIcon() {
       viewBox="0 0 34 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
     >
       <path
         d="M10.0938 17C12.7344 17 14.875 14.8594 14.875 12.2188C14.875 9.57814 12.7344 7.4375 10.0938 7.4375C7.45314 7.4375 5.3125 9.57814 5.3125 12.2188C5.3125 14.8594 7.45314 17 10.0938 17Z"
