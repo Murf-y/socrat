@@ -1,12 +1,6 @@
 import NavBar from '@/components/NavBar'
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
-import { currentUser, useClerk } from '@clerk/nextjs'
-
-// Import a component without SSR
-const Circle = dynamic(() => import('@/components/Circle'), {
-  ssr: false,
-})
+import Circle from '@/components/Circle'
 
 export const metadata: Metadata = {
   title: 'Socratic Circle | Socrat',
@@ -18,9 +12,9 @@ export default async function Page({ params }: { params: { code: string } }) {
   const { code } = params
 
   return (
-    <div className="w-full h-screen flex flex-col space-y-2">
+    <div className="w-full h-screen flex flex-col space-y-0">
       <NavBar showCreateCircle={false} />
-      {code !== undefined && <Circle code={code} />}
+      {code !== undefined && <Circle circleCode={code} />}
     </div>
   )
 }
