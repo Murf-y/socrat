@@ -1,9 +1,7 @@
 'use client'
 
-import React, { Suspense, useMemo, useState } from 'react'
-
+import React, { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useUser } from '@clerk/nextjs'
 import Clock from './Clock'
 import MembersIcon from './Images/MembersIcon'
 import ShareCircleModal from './ShareCircleModal'
@@ -14,13 +12,6 @@ import EndCallIcon from './Images/EndCallIcon'
 import LeaveIcon from './Images/LeaveIcon'
 import {
   Avatar,
-  CallParticipantsList,
-  CallStats,
-  DeviceSelectorAudioInput,
-  DeviceSettings,
-  OwnCapability,
-  SfuModels,
-  StreamTheme,
   useCall,
   useCallStateHooks,
   useStreamVideoClient,
@@ -33,19 +24,18 @@ export default function CircleUI({ circleCode }: { circleCode: string }) {
 
   const call = useCall()
   const client = useStreamVideoClient()
-  const { useMicrophoneState, useParticipants, useHasPermissions } = useCallStateHooks()
+  const { useMicrophoneState, useParticipants } = useCallStateHooks()
   const participants = useParticipants()
   const { microphone, isMute } = useMicrophoneState()
 
   const [topic, setTopic] = useState(
     'Do you think the nature of reality is inherently objective or subjective, and how does our perception of it influence our understanding?'
   )
+
   const [isParticipantsModalOpen, setIsParticipantsModalOpen] = useState(true)
   const isManager = useMemo(() => {
     return call?.isCreatedByMe
   }, [call])
-
-  console.log(useHasPermissions(OwnCapability.READ_CALL))
 
   return (
     <>

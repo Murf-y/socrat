@@ -1,13 +1,21 @@
 'use client'
 import { generateTokenAction } from '@/app/circle/[code]/action'
 import CircleUI from './CircleUI'
-import { Call, StreamCall, StreamVideo, StreamVideoClient } from '@stream-io/video-react-sdk'
+import {
+  Call,
+  CallingState,
+  SpeakerLayout,
+  StreamCall,
+  StreamVideo,
+  StreamVideoClient,
+} from '@stream-io/video-react-sdk'
 import { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
+import '@stream-io/video-react-sdk/dist/css/styles.css'
 
 const apiKey = process.env.NEXT_PUBLIC_GET_STREAM_API_KEY ?? ''
 
-function LoadingUI() {
+export function LoadingUI() {
   return (
     <div className="flex w-full h-full items-center text-xl justify-center">
       <div role="status" className="text-text pl-6 relative">
@@ -55,7 +63,7 @@ function Circle({ circleCode }: { circleCode: string }) {
       tokenProvider: () => generateTokenAction(userId),
     })
 
-    const currentCall = currentClient.call('circle', circleCode)
+    const currentCall = currentClient.call('default', circleCode)
     currentCall
       .join({
         create: true,
@@ -78,12 +86,16 @@ function Circle({ circleCode }: { circleCode: string }) {
     }
   }, [circleCode, user.user])
 
-  if (client == null || call == null) return <LoadingUI />
+  if (client == null || call == null || call.state.callingState !== CallingState.JOINED)
+    return <LoadingUI />
 
   return (
     <StreamVideo client={client}>
       <StreamCall call={call}>
         <div className="flex w-full h-full flex-col flex-1 relative pt-2 px-8 sm:px-16 md:px-20 bg-background">
+          <div className="hidden">
+            <SpeakerLayout />
+          </div>
           <CircleUI circleCode={circleCode} />
         </div>
       </StreamCall>
