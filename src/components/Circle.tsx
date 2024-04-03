@@ -63,7 +63,7 @@ function Circle({ circleCode }: { circleCode: string }) {
       tokenProvider: () => generateTokenAction(userId),
     })
 
-    const currentCall = currentClient.call('default', circleCode)
+    const currentCall = currentClient.call('circle', circleCode)
     currentCall
       .join({
         create: true,
@@ -86,8 +86,7 @@ function Circle({ circleCode }: { circleCode: string }) {
     }
   }, [circleCode, user.user])
 
-  if (client == null || call == null || call.state.callingState !== CallingState.JOINED)
-    return <LoadingUI />
+  if (client == null || call == null) return <LoadingUI />
 
   return (
     <StreamVideo client={client}>

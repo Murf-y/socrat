@@ -32,7 +32,7 @@ export default function CircleUI({ circleCode }: { circleCode: string }) {
     'Do you think the nature of reality is inherently objective or subjective, and how does our perception of it influence our understanding?'
   )
 
-  const [isParticipantsModalOpen, setIsParticipantsModalOpen] = useState(true)
+  const [isParticipantsModalOpen, setIsParticipantsModalOpen] = useState(false)
   const isManager = useMemo(() => {
     return call?.isCreatedByMe
   }, [call])

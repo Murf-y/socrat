@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 function ShareCircleModal() {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const [didCopy, setDidCopy] = useState(false)
 
   return (
