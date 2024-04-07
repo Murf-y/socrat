@@ -3,9 +3,14 @@ import React, { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
-function ShareCircleModal() {
+function ShareCircleModal({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean
+  setIsOpen: (isOpen: boolean) => void
+}) {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(true)
   const [didCopy, setDidCopy] = useState(false)
 
   return (
