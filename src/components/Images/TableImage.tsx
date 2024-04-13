@@ -104,7 +104,6 @@ function TableImage({ participants }: TableImageProps) {
   return (
     <svg
       width="637"
-      height="623"
       viewBox="0 0 637 623"
       className="w-96 aspect-square"
       fill="none"

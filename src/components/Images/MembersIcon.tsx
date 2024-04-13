@@ -5,7 +5,7 @@ function MembersIcon({ onClick }: { onClick: () => void }) {
     <svg
       width="32"
       height="32"
-      className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer"
+      className="w-4 h-4 md:w-6 md:h-6 cursor-pointer"
       viewBox="0 0 34 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

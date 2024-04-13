@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
+import Tooltip from './Tooltip'
 
 function ShareCircleModal({
   isOpen,
@@ -16,25 +17,27 @@ function ShareCircleModal({
   return (
     <>
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer"
-          onClick={() => setIsOpen(true)}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
-          />
-        </svg>
+        <Tooltip message="Share Circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4 md:w-6 md:h-6 cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+            />
+          </svg>
+        </Tooltip>
       </div>
       <div
         className={clsx(
-          'absolute bg-background right-2 top-2 transition-all delay-300 shadow-md shadow-text border-2 border-text px-8 py-4 text-white',
+          'absolute bg-background right-2 top-2 transition-all delay-300 shadow-md shadow-text border-2 border-text px-8 py-4 text-white rounded-sm z-20',
           isOpen ? 'block' : 'hidden'
         )}
       >
@@ -56,7 +59,7 @@ function ShareCircleModal({
           <p className="text-xs sm:text-sm text-gray">
             Share this circle link with others that you want to join
           </p>
-          <div className="w-full border-2 border-lightgray p-2 flex flex-row justify-between">
+          <div className="w-full border-2 border-lightgray p-2 flex flex-row justify-between items-center space-x-2">
             <p className="text-base text-text">{pathname}</p>
             {didCopy ? (
               <svg
@@ -80,7 +83,7 @@ function ShareCircleModal({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 cursor-pointer text-text"
+                className="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer text-text"
                 onClick={() => {
                   if (navigator.clipboard && pathname) {
                     navigator.clipboard.writeText(pathname)

@@ -91,7 +91,7 @@ function Circle({ circleCode }: { circleCode: string }) {
   return (
     <StreamVideo client={client}>
       <StreamCall call={call}>
-        <div className="flex w-full h-full flex-col flex-1 relative pt-2 px-8 sm:px-16 md:px-20 bg-background">
+        <div className="flex w-full h-full flex-col flex-1 relative py-2 px-4 sm:px-16 md:px-20 bg-background">
           <div className="hidden">
             <SpeakerLayout />
           </div>

@@ -18,7 +18,7 @@ export default async function Page() {
       <div className="relative z-0 flex flex-col space-y-14 sm:space-y-20 md:space-y-24 items-center w-full h-screen overflow-hidden">
         <NavBar />
 
-        <div className="flex flex-col space-y-6 text-lg sm:text-2xl md:text-4xl z-10">
+        <div className="flex flex-col space-y-6 text-lg sm:text-2xl md:text-4xl z-[1]">
           <div className="w-full text-center">Engage, Discuss, Learn</div>
           <div className="w-full text-center">Socrat&apos;s Virtual Harkness Circles</div>
         </div>

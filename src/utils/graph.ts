@@ -1,6 +1,6 @@
 export class Graph {
-    private nodes: Map<string, GraphNode> = new Map()
-    
+    nodes: Map<string, GraphNode> = new Map()
+    edgesCount: number = 0
     addPersonIfDoesNotExist(node: GraphNode) {
         if (this.nodes.has(node.id)) {
             return
@@ -20,6 +20,7 @@ export class Graph {
             this.addPersonIfDoesNotExist(to)
         }
         from.addEdge(to)
+        this.edgesCount++
     }
 
     getStringRepresentation() {

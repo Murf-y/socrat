@@ -19,7 +19,7 @@ export default function Loading() {
           />
         </svg>
         <p className="absolute -left-1/2 -top-3/4 sm:left-1/4 sm:top-[45%] w-full text-nowrap">
-          Loading
+          Loading . . .
         </p>
         <span className="sr-only">Loading...</span>
       </div>

@@ -2,7 +2,14 @@ import React from 'react'
 
 function MicClosedIcon() {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-4 h-4 sm:w-6 md:h-6"
+    >
       <path
         d="M27 25L6 4"
         stroke="currentColor"

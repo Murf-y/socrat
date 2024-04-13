@@ -8,6 +8,7 @@ function MicOpenIcon() {
       viewBox="0 0 26 26"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-4 h-4 sm:w-6 md:h-6"
     >
       <path
         fill="currentColor"
