@@ -25,6 +25,7 @@ import Tooltip from './Tooltip'
 import Image from 'next/image'
 import { LoadingUI } from './Circle'
 import GraphCanvas from './CircleAnalytics'
+import { getRandomPhilosophyTopic } from '@/utils/getRandomPhilosophyTopic'
 
 export interface User {
   id: string
@@ -47,9 +48,7 @@ export default function CircleUI({ circleCode }: { circleCode: string }) {
 
   const { microphone, isMute } = useMicrophoneState()
 
-  const [topic, setTopic] = useState(
-    'Do you think the nature of reality is inherently objective or subjective, and how does our perception of it influence our understanding?'
-  )
+  const [topic, setTopic] = useState(getRandomPhilosophyTopic(circleCode))
 
   const [isParticipantsModalOpen, setIsParticipantsModalOpen] = useState(false)
   const [isAnalyticsModalOpen, setIsAnalyticsModalOpen] = useState(false)
@@ -57,45 +56,13 @@ export default function CircleUI({ circleCode }: { circleCode: string }) {
 
   const isManager = useMemo(() => {
     return call?.isCreatedByMe
-  }, [call])
+  }, [call?.isCreatedByMe])
 
-  const [capturingData, setCatureData] = useState(true)
+  console.log('isManager', isManager)
+
+  const [capturingData, setCatureData] = useState(isManager)
   const graph = useMemo(() => {
-    const graph = new Graph()
-    // const testNode1 = new GraphNode('1', 'Charbel', 'https://i.pravatar.cc/300')
-    // const testNode2 = new GraphNode('2', 'Rayan', 'https://i.pravatar.cc/300')
-    // const testNode3 = new GraphNode('3', 'Lara', 'https://i.pravatar.cc/300')
-    // const testNode4 = new GraphNode('4', 'Reine', 'https://i.pravatar.cc/300')
-    // const testNode5 = new GraphNode('5', 'Claire', 'https://i.pravatar.cc/300')
-    // const testNode6 = new GraphNode('6', 'Matar', 'https://i.pravatar.cc/300')
-    // const testNode8 = new GraphNode('8', 'Bassem', 'https://i.pravatar.cc/300')
-    // graph.addPersonIfDoesNotExist(testNode1)
-    // graph.addPersonIfDoesNotExist(testNode2)
-    // graph.addPersonIfDoesNotExist(testNode3)
-    // graph.addPersonIfDoesNotExist(testNode4)
-    // graph.addPersonIfDoesNotExist(testNode5)
-    // graph.addPersonIfDoesNotExist(testNode6)
-    // graph.addPersonIfDoesNotExist(testNode8)
-    // graph.addEdge(testNode1, testNode3)
-    // graph.addEdge(testNode1, testNode3)
-    // graph.addEdge(testNode1, testNode3)
-    // graph.addEdge(testNode2, testNode4)
-    // graph.addEdge(testNode2, testNode4)
-    // graph.addEdge(testNode2, testNode4)
-    // graph.addEdge(testNode5, testNode1)
-    // graph.addEdge(testNode8, testNode2)
-    // graph.addEdge(testNode8, testNode3)
-    // graph.addEdge(testNode8, testNode4)
-    // graph.addEdge(testNode8, testNode5)
-    // graph.addEdge(testNode6, testNode2)
-    // graph.addEdge(testNode6, testNode2)
-    // graph.addEdge(testNode6, testNode2)
-    // graph.addEdge(testNode6, testNode3)
-    // graph.addEdge(testNode6, testNode3)
-    // graph.addEdge(testNode4, testNode3)
-    // graph.addEdge(testNode4, testNode3)
-    // graph.addEdge(testNode4, testNode3)
-    return graph
+    return new Graph()
   }, [])
 
   const [participantAnalysticsDisclosure, setParticipantAnalysticsDisclosure] = useState<boolean[]>(
@@ -167,7 +134,7 @@ export default function CircleUI({ circleCode }: { circleCode: string }) {
       })
 
       const totalEdges = graph.edgesCount
-      return ((totalParticipation / totalEdges) * 100).toFixed(2) + '%'
+      return totalEdges === 0 ? '0%' : ((totalParticipation / totalEdges) * 100).toFixed(2) + '%'
     },
     'Loves talking to:': (graph: Graph, id: string) => {
       const node = graph.getNode(id)
