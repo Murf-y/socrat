@@ -6,13 +6,10 @@ import Link from 'next/link'
 
 interface Chapter {
   name: string
+  link: string
   isUp: boolean
   location?: string
   height?: string
-}
-
-function transformNameToLink(name: string) {
-  return name.toLowerCase().split(' ').join('-')
 }
 
 function Chapter({ chapter }: { chapter: Chapter }) {
@@ -21,7 +18,7 @@ function Chapter({ chapter }: { chapter: Chapter }) {
       <div className="flex flex-col items-center justify-center">
         <Link
           className="text-xs md:text-sm lg:text-lg underline font-semibold "
-          href={`/chapters/${transformNameToLink(chapter.name)}`}
+          href={`/chapters/${chapter.link}`}
         >
           {chapter.name}
         </Link>
@@ -36,7 +33,7 @@ function Chapter({ chapter }: { chapter: Chapter }) {
         <div className="w-2 h-2 md:w-4 md:h-4 bg-text transform rotate-45" />
         <Link
           className="text-xs md:text-sm lg:text-lg underline font-semibold"
-          href={`/chapters/${chapter.name}`}
+          href={`/chapters/${chapter.link}`}
         >
           {chapter.name}
         </Link>
@@ -47,14 +44,20 @@ function Chapter({ chapter }: { chapter: Chapter }) {
 
 export default function Timeline() {
   const [chapters, setChapters] = useState<Chapter[]>([
-    { name: 'Idealism', isUp: true, location: '0%', height: '4rem' },
-    { name: 'Occasionalism', isUp: false, location: '12%', height: '4rem' },
-    { name: 'Parallelism', isUp: false, location: '30%', height: '5rem' },
-    { name: 'Substance Dualism', isUp: true, location: '45%', height: '4rem' },
-    { name: 'Epiphenomenalism', isUp: false, location: '55%', height: '4rem' },
-    { name: 'Functionalism', isUp: true, location: '68%', height: '5rem' },
-    { name: 'Behaviorism', isUp: true, location: '85%', height: '4rem' },
-    { name: 'Materialism', isUp: false, location: '90%', height: '5rem' },
+    { name: 'Idealism', isUp: true, location: '0%', height: '4rem', link: 'idealism' },
+    { name: 'Occasionalism', isUp: false, location: '12%', height: '4rem', link: 'occasionalism' },
+    { name: 'Parallelism', isUp: false, location: '30%', height: '5rem', link: 'parallelism' },
+    { name: 'Substance Dualism', isUp: true, location: '45%', height: '4rem', link: 'dualism' },
+    {
+      name: 'Epiphenomenalism',
+      isUp: false,
+      location: '55%',
+      height: '4rem',
+      link: 'epiphenomenalism',
+    },
+    { name: 'Functionalism', isUp: true, location: '68%', height: '5rem', link: 'functionalism' },
+    { name: 'Behaviorism', isUp: true, location: '85%', height: '4rem', link: 'behaviorism' },
+    { name: 'Materialism', isUp: false, location: '90%', height: '5rem', link: 'materialism' },
   ])
 
   useEffect(() => {
@@ -63,14 +66,44 @@ export default function Timeline() {
 
     if (width < 640) {
       setChapters([
-        { name: 'Idealism', isUp: true, location: '0%', height: '2.5rem' },
-        { name: 'Occasionalism', isUp: false, location: '7%', height: '2.5rem' },
-        { name: 'Parallelism', isUp: false, location: '25%', height: '5.5rem' },
-        { name: 'Dualism', isUp: true, location: '35%', height: '2.5rem' },
-        { name: 'Epiphenoism', isUp: false, location: '45%', height: '2.5rem' },
-        { name: 'Functionalism', isUp: true, location: '60%', height: '4.5rem' },
-        { name: 'Behaviorism', isUp: true, location: '82%', height: '2.5rem' },
-        { name: 'Materialism', isUp: false, location: '87%', height: '4.5rem' },
+        { name: 'Idealism', isUp: true, location: '0%', height: '2.5rem', link: 'idealism' },
+        {
+          name: 'Occasionalism',
+          isUp: false,
+          location: '7%',
+          height: '2.5rem',
+          link: 'occasionalism',
+        },
+        {
+          name: 'Parallelism',
+          isUp: false,
+          location: '25%',
+          height: '5.5rem',
+          link: 'parallelism',
+        },
+        { name: 'Dualism', isUp: true, location: '35%', height: '2.5rem', link: 'dualism' },
+        {
+          name: 'Epiphenoism',
+          isUp: false,
+          location: '45%',
+          height: '2.5rem',
+          link: 'epiphenomenalism',
+        },
+        {
+          name: 'Functionalism',
+          isUp: true,
+          location: '60%',
+          height: '4.5rem',
+          link: 'functionalism',
+        },
+        { name: 'Behaviorism', isUp: true, location: '82%', height: '2.5rem', link: 'behaviorism' },
+        {
+          name: 'Materialism',
+          isUp: false,
+          location: '87%',
+          height: '4.5rem',
+          link: 'materialism',
+        },
       ])
     }
   }, [])
